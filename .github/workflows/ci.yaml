@@ -1,0 +1,12 @@
+name: Continuous integrattion
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - name: list current directory
+      run: ls -la
